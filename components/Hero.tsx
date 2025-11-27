@@ -183,20 +183,21 @@ export default function Hero() {
                     </li>
                     <li>
                       <Link
+                        href="/events/industry-guest-lecture-design-thinking-2025"
+                        className="hover:underline hover:text-yellow-400 transition cursor-pointer"
+                      >
+                        Industry Guest Lecture on Design Thinking
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
                         href="/events/cii-skills-summit-2025"
                         className="hover:underline hover:text-yellow-400 transition cursor-pointer"
                       >
                         CII Skills Summit – 2025
                       </Link>
                     </li>
-                    <li>
-                      <Link
-                        href="/events/mma-change-readiness-2025"
-                        className="hover:underline hover:text-yellow-400 transition cursor-pointer"
-                      >
-                        MMA Session on Change Readiness
-                      </Link>
-                    </li>
+
                   </ul>
                 </div>
               </motion.div>

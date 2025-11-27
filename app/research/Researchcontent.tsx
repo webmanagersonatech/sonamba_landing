@@ -321,86 +321,184 @@ export default function ResearchPage() {
                             transition={{ duration: 0.6, ease: "easeOut" }}
                             className="relative rounded-2xl p-6 sm:p-10 l flex flex-col gap-10 bg-white overflow-hidden"
                         >
-                            {/* Section Heading */}
-                            <div className="text-center relative z-10">
 
-                                <p className=" text-gray-600  text-sm sm:text-base md:text-lg text-sm ">
-                                    Centre for Business Transformation
-                                </p>
-                            </div>
+                            {/* ======================= RESEARCH SUPERVISORS & SCHOLARS ======================= */}
+                            <div className="space-y-6">
+                                <h2 className="text-xl font-semibold text-gray-800 text-center">
+                                    List of Research Supervisors & existing Doctoral Scholars
+                                </h2>
 
-                            {/* Stats (kept as is) */}
-                            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 relative z-10">
-                                {stats.map((item, i) => (
-                                    <motion.div
-                                        key={i}
-                                        initial={{ opacity: 0, scale: 0.9 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        transition={{ duration: 0.5, delay: i * 0.15 }}
-                                        className="bg-white border border-gray-200  p-6 flex flex-col items-center gap-3 hover:shadow-xl hover:border-maroon transition-all duration-300"
-                                    >
-                                        <item.icon className="w-8 h-8 text-gray-500" />
-                                        <h3 className="text-2xl font-bold text-maroon">{item.value}</h3>
-                                        <p className="text-sm md:text-base text-maroon text-center">
-                                            {item.label}
-                                        </p>
-                                    </motion.div>
-                                ))}
-                            </div>
+                                <div className="overflow-x-auto shadow rounded-xl">
+                                    <table className="min-w-full border border-gray-300 text-sm">
+                                        <thead className="bg-gray-100">
+                                            <tr>
+                                                <th className="border px-3 py-2">Name of the Research Supervisor</th>
+                                                <th className="border px-3 py-2">Year of recognition as a Research Guide</th>
+                                                <th className="border px-3 py-2">Name of the Research Scholars</th>
+                                                <th className="border px-3 py-2">Month and Year of registration of the scholar</th>
+                                                <th className="border px-3 py-2">Title of the Thesis</th>
+                                            </tr>
+                                        </thead>
 
-                            {/* Consultancy Services */}
-                            <div className="relative z-10">
-                                <h3 className="text-lg md:text-xl font-semibold text-maroon mb-4 border-l-4 border-yellow-500 pl-3">
-                                    Consultancy Services
-                                </h3>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    {consultancy.map((item, i) => (
-                                        <motion.div
-                                            key={i}
-                                            initial={{ opacity: 0, y: 20 }}
-                                            animate={{ opacity: 1, y: 0 }}
-                                            transition={{ duration: 0.5, delay: i * 0.1 }}
-                                            className="flex items-center gap-3 p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md hover:border-maroon transition-all duration-300"
-                                        >
-                                            <img
-                                                src={item.image}
-                                                alt={item.text}
-                                                className="w-8 h-8 object-contain flex-shrink-0"
-                                            />
-                                            <span className="text-gray-700 text-sm md:text-base font-medium leading-snug">
-                                                {item.text}
-                                            </span>
-                                        </motion.div>
-                                    ))}
+                                        <tbody>
+                                            {/* ---------------- DR. ANJANI ---------------- */}
+                                            {[
+                                                {
+                                                    scholar: "Ms.Prabavathi D",
+                                                    reg: "July 2021",
+                                                    thesis: "The Impact of Talent Management on Sustainable Organizational Performance in ITES Industry, Bengaluru – An Empirical Study"
+                                                },
+                                                {
+                                                    scholar: "Kiran Kumar Keerthipati",
+                                                    reg: "January 2021",
+                                                    thesis: "An Empirical Study on Digital Marketing Analytics and Business Performance of B2C Companies in Bengaluru"
+                                                },
+                                                {
+                                                    scholar: "Ms.Umarani C",
+                                                    reg: "July 2022",
+                                                    thesis: "A Study on the Work and Life Synergy of Doctors in Salem District"
+                                                },
+                                                {
+                                                    scholar: "Ms.Priyanka M",
+                                                    reg: "January 2023",
+                                                    thesis: "A Study on Social Media Recruitment – Employers and Job Candidates Perspective with Special Reference to Generation Z"
+                                                },
+                                                {
+                                                    scholar: "Ms.Kirubahari S",
+                                                    reg: "January 2023",
+                                                    thesis: "A Study on Adoption of Financial Technology (Agro Fintech) in Indian Agricultural Sector for Sustainable Development – Tamil Nadu"
+                                                },
+                                                {
+                                                    scholar: "Mr.Padmanaban G",
+                                                    reg: "July 2023",
+                                                    thesis: "The Role of Employability Skills for Career Opportunities of MBA Students in Selected Districts of Tamil Nadu"
+                                                },
+                                                {
+                                                    scholar: "Mr.Vigneshwar U",
+                                                    reg: "January 2024",
+                                                    thesis: "Exploring the Dynamics of Luxury Car Ownership: An Integrated Analysis of Socio-Cultural, Economic, Psychological and Technological Factors on Consumer Preferences, Brand Loyalty and Luxury Car Attributes In Tamil Nadu"
+                                                },
+
+                                            ].map((item, i) => (
+                                                <tr key={i }>
+                                                    {i === 0 && (
+                                                        <td rowSpan={7} className="border px-3 py-2 font-medium text-center">
+                                                            Dr. P. K. Anjani
+                                                        </td>
+                                                    )}
+                                                    {i === 0 && (
+                                                        <td rowSpan={7} className="border px-3 py-2 text-center">
+                                                            2016
+                                                        </td>
+                                                    )}
+                                                    <td className="border px-3 py-2">{item.scholar}</td>
+                                                    <td className="border px-3 py-2">{item.reg}</td>
+                                                    <td className="border px-3 py-2">{item.thesis}</td>
+                                                </tr>
+                                            ))}
+
+                                            {/* ---------------- DR. PRABA DEVI ---------------- */}
+                                            {[
+                                                {
+                                                    scholar: "Ms.Subashini T",
+                                                    reg: "July 2023",
+                                                    thesis: "A Study Of Work Life Balance and Organisational Performance Role of Social Support and Organisational Trust as Mediating Variables."
+                                                },
+                                                {
+                                                    scholar: "Mr.Raghul Thesigan J",
+                                                    reg: "July 2023",
+                                                    thesis: "Influencing Factor of Stock Market & Stock Price Prediction: An Analysis Using Information Technology over Conventional Method"
+                                                },
+                                                {
+                                                    scholar: "Ms.Sinthuja K",
+                                                    reg: "January 2025",
+                                                    thesis: "The Gig Economy and its Influence on Traditional Employment Models."
+                                                },
+                                                {
+                                                    scholar: "Ms.Milana B",
+                                                    reg: "May 2025",
+                                                    thesis: "Green Consumerism: A Study on Consumer Buying Behavior Towards FMCG Products With Special Emphasis on Tamil Nadu."
+                                                }
+                                            ].map((item, i) => (
+                                                <tr key={i}>
+                                                    {i === 0 && (
+                                                        <td rowSpan={4} className="border px-3 py-2 font-medium text-center">
+                                                            Dr. P. Praba Devi
+                                                        </td>
+                                                    )}
+                                                    {i === 0 && (
+                                                        <td rowSpan={4} className="border px-3 py-2 text-center">
+                                                            2016
+                                                        </td>
+                                                    )}
+                                                    <td className="border px-3 py-2">{item.scholar}</td>
+                                                    <td className="border px-3 py-2">{item.reg}</td>
+                                                    <td className="border px-3 py-2">{item.thesis}</td>
+                                                </tr>
+                                            ))}
+
+                                            {/* ---------------- DR. RAMESH KUMAAR ---------------- */}
+                                            <tr>
+                                                <td className="border px-3 py-2 font-medium text-center" rowSpan={2}>
+                                                    Dr. V. P. Ramesh Kumaar
+                                                </td>
+                                                <td className="border px-3 py-2 text-center" rowSpan={2}>2016</td>
+                                                <td className="border px-3 py-2">Ms. Ashwathi A</td>
+                                                <td className="border px-3 py-2">July 2023</td>
+                                                <td className="border px-3 py-2">An Assessment Of Work Life Balance and its Influence on Employee Performance in Information Technology Enabled Services (ITES).</td>
+                                            </tr>
+                                            <tr>
+                                                <td className="border px-3 py-2">Mr. Karthikeyan R</td>
+                                                <td className="border px-3 py-2">January 2024</td>
+                                                <td className="border px-3 py-2">Digital Marketing, Social Media and Emerging Technologies: A Study on its Effectiveness and Impact on Online Purchases Behavior.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
 
-                            {/* MoUs */}
-                            <div className="relative z-10">
-                                <h3 className="text-lg md:text-xl font-semibold text-maroon mb-4 border-l-4 border-yellow-500 pl-3">
-                                    MoUs with Industries / Organisations
-                                </h3>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-                                    {mous.map((item, i) => (
-                                        <motion.div
-                                            key={i}
-                                            initial={{ opacity: 0, y: 20 }}
-                                            animate={{ opacity: 1, y: 0 }}
-                                            transition={{ duration: 0.5, delay: i * 0.1 }}
-                                            className="flex items-center gap-3 p-4 bg-white rounded-lg shadow-sm border border-gray-200 hover:shadow-md hover:border-maroon transition-all duration-300"
-                                        >
-                                            <img
-                                                src={item.image}
-                                                alt={item.text}
-                                                className="w-8 h-8 object-contain flex-shrink-0"
-                                            />
-                                            <span className="text-gray-700 text-sm md:text-base font-medium leading-snug">
-                                                {item.text}
-                                            </span>
-                                        </motion.div>
-                                    ))}
+
+                            {/* ======================= RESEARCH PROJECTS ======================= */}
+                            <div className="space-y-6 ">
+                                <h2 className="text-xl font-semibold text-gray-800 text-center">
+                                    Research Projects
+                                </h2>
+
+                                <div className="overflow-x-auto shadow rounded-xl">
+                                    <table className="min-w-full border border-gray-300 text-sm">
+                                        <thead className="bg-gray-100">
+                                            <tr>
+                                                <th className="border px-3 py-2">S.No</th>
+                                                <th className="border px-3 py-2">Title of the Project</th>
+                                                <th className="border px-3 py-2">Funding Body</th>
+                                                <th className="border px-3 py-2">Faculty Co-ordinator</th>
+                                                <th className="border px-3 py-2">Sponsor/ Grant (in Rs)</th>
+                                                <th className="border px-3 py-2">Period</th>
+                                                <th className="border px-3 py-2">Status</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td className="border px-3 py-2 text-center">1</td>
+                                                <td className="border px-3 py-2">
+                                                    Voices of Tradition: Exploring the Social Dynamics of Handloom Weaving Communities in Tamil Nadu
+                                                </td>
+                                                <td className="border px-3 py-2">ICSSR</td>
+                                                <td className="border px-3 py-2">Dr. P. K. Anjani</td>
+                                                <td className="border px-3 py-2">₹12,47,000/-</td>
+                                                <td className="border px-3 py-2">2024 – 2026</td>
+                                                <td className="border px-3 py-2">On-going</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
+
+
+
+
+
 
                             <section className="relative z-10 overflow-hidden bg-maroon py-12 px-8 ">
                                 <div className="container">

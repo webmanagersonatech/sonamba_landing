@@ -55,7 +55,7 @@ export default function ScholarshipWidget() {
                                     className="text-yellow-500 flex-shrink-0"
                                 />
                                 <span className="relative font-semibold leading-tight">
-                                    Earlybird Scholarships
+                                    Scholarships - 2026
                                     <motion.span
                                         className="absolute left-0 bottom-[-3px] h-[2px] bg-yellow-500 rounded-full"
                                         initial={{ width: 0, opacity: 0 }}
@@ -90,6 +90,12 @@ export default function ScholarshipWidget() {
                                                 97%
                                             </span>
                                             <div className="mt-1.5 space-y-1 text-[14px] sm:text-[15px] md:text-[16px] leading-tight">
+                                                <p>
+                                                    <span className="text-yellow-400">
+                                                        Earlybird Scholarship:
+                                                    </span>{" "}
+                                                    ₹50,000
+                                                </p>
                                                 <p>
                                                     <span className="text-yellow-400">
                                                         MAT (<span className="italic font-bold">85%+</span>):

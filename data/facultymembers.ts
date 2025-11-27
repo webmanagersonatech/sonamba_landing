@@ -142,56 +142,7 @@ export const facultyMembers = [
     <li><i>Principles of Management</i>, Sonaversity, Sona College of Technology, Salem (2007).</li>
   </ul>
 
- <h3 class="text-xl font-semibold mt-6 mb-2">Research Supervision</h3>
-<p><strong>Research Supervisor:</strong> Dr. P. K. Anjani</p>
-<p><strong>Year of recognition as a Research Guide:</strong> 2016</p>
 
-<table class="table-auto border-collapse border border-gray-400 w-full mt-4">
-  <thead class="bg-gray-100">
-    <tr>
-      <th class="border border-gray-400 px-3 py-2">Name of the Research Scholar</th>
-      <th class="border border-gray-400 px-3 py-2">Month & Year of Registration</th>
-      <th class="border border-gray-400 px-3 py-2">Title of the Thesis</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Ms. Prabavathi D</td>
-      <td class="border border-gray-400 px-3 py-2">July 2021</td>
-      <td class="border border-gray-400 px-3 py-2">The Impact of Talent Management on Sustainable Organizational Performance in ITES Industry, Bengaluru: An Empirical Study</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Kiran Kumar Keerthipati</td>
-      <td class="border border-gray-400 px-3 py-2">January 2021</td>
-      <td class="border border-gray-400 px-3 py-2">An Empirical Study on Digital Marketing Analytics and Business Performance of B2C Companies in Bengaluru</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Ms. Umarani C</td>
-      <td class="border border-gray-400 px-3 py-2">July 2022</td>
-      <td class="border border-gray-400 px-3 py-2">A Study on the Work and Life Synergy of Doctors in Salem District</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Ms. Priyanka M</td>
-      <td class="border border-gray-400 px-3 py-2">January 2023</td>
-      <td class="border border-gray-400 px-3 py-2">A Study on Social Media Recruitment of Employers and Job Candidates’ Perspective: A Special Reference to Generation Z</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Ms. Kirubahari S</td>
-      <td class="border border-gray-400 px-3 py-2">January 2023</td>
-      <td class="border border-gray-400 px-3 py-2">A Study on Adoption of Financial Technology in Indian Agricultural Sector (Agro Fintech) for Sustainable Development with Special Reference to Tamil Nadu State</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Mr. Padmanaban G</td>
-      <td class="border border-gray-400 px-3 py-2">July 2023</td>
-      <td class="border border-gray-400 px-3 py-2">The Role of Employability Skills for Career Opportunities of MBA Students in the Selected District of Tamil Nadu</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Mr. Vigneshwar U</td>
-      <td class="border border-gray-400 px-3 py-2">January 2024</td>
-      <td class="border border-gray-400 px-3 py-2">Exploring the Dynamics of Luxury Car Ownership: An Integrated Analysis of Socio-Cultural, Economic, Psychological and Technological Factors on Consumer Preferences, Brand Loyalty and Luxury Car Attributes in Tamil Nadu</td>
-    </tr>
-  </tbody>
-</table>
 
 <h3 class="text-xl font-semibold mt-6 mb-2">Research Projects (Funded)</h3>
 <ul class="list-disc pl-5 space-y-1">
@@ -263,41 +214,6 @@ export const facultyMembers = [
   <li><i>Principles of Management</i>, Sonaversity, Sona College of Technology, Salem (2007).</li>
 </ul>
 
-<h3 class="text-xl font-semibold mt-6 mb-2">Research Supervision</h3>
-<p><strong>Research Supervisor:</strong> Dr. P. Praba Devi</p>
-<p><strong>Year of recognition as a Research Guide:</strong> 2016</p>
-
-<table class="table-auto border-collapse border border-gray-400 w-full mt-4">
-  <thead class="bg-gray-100">
-    <tr>
-      <th class="border border-gray-400 px-3 py-2">Name of the Research Scholar</th>
-      <th class="border border-gray-400 px-3 py-2">Month & Year of Registration</th>
-      <th class="border border-gray-400 px-3 py-2">Title of the Thesis</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Ms. Subashini T</td>
-      <td class="border border-gray-400 px-3 py-2">July 2023</td>
-      <td class="border border-gray-400 px-3 py-2">A Study of Work Life Balance and Organisational Performance: Role of Social Support and Organisational Trust as Mediating Variables</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Mr. Raghul Thesigan J</td>
-      <td class="border border-gray-400 px-3 py-2">July 2023</td>
-      <td class="border border-gray-400 px-3 py-2">Influencing Factors of Stock Market & Stock Price Prediction: An Analysis Using Information Technology over Conventional Method</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Ms. Sinthuja K</td>
-      <td class="border border-gray-400 px-3 py-2">January 2025</td>
-      <td class="border border-gray-400 px-3 py-2">The Gig Economy and its Influence on Traditional Employment Models</td>
-    </tr>
-    <tr>
-      <td class="border border-gray-400 px-3 py-2">Ms. Milana B</td>
-      <td class="border border-gray-400 px-3 py-2">May 2025</td>
-      <td class="border border-gray-400 px-3 py-2">Green Consumerism: A Study on Consumer Buying Behavior Towards FMCG Products with Special Emphasis on Tamil Nadu</td>
-    </tr>
-  </tbody>
-</table>
 
 
 <h3 class="text-xl font-semibold mt-6 mb-2">Research Projects (Funded)</h3>
