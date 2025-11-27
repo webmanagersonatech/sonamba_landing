@@ -2,7 +2,7 @@ import { eventsData } from "../../../data/eventdata";
 import EventsDetailAnimated from "../../../components/EventsDetailAnimated";
 import type { Metadata } from "next";
 
-// Generate static params for all events (SSG)
+// Generate static params for SSG
 export async function generateStaticParams() {
   return eventsData.map((event) => ({
     slug: event.slug,
@@ -13,7 +13,7 @@ interface EventsPageProps {
   params: { slug: string };
 }
 
-// ⭐ Properly Typed Metadata (NO TS ERRORS)
+// Dynamically generate metadata for each event
 export async function generateMetadata(
   { params }: EventsPageProps
 ): Promise<Metadata> {
@@ -26,7 +26,7 @@ export async function generateMetadata(
   }
 
   return {
-    title: `Events | ${event.title} | Sona School of Business and Management`,
+    title: `${event.title} | Sona School of Business and Management`,
     description: event.description?.slice(0, 150),
 
     openGraph: {
@@ -53,7 +53,7 @@ export async function generateMetadata(
   };
 }
 
-// Main page
+// Main page component
 export default function EventsDetailPage({ params }: EventsPageProps) {
   const eventItem = eventsData.find((event) => event.slug === params.slug);
 
